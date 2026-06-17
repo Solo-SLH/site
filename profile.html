@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://ianlunn.github.io/Hover/css/hover.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <title>𝐃𝐫𝐚𝐠𝐨𝐧𝐙_𝐓𝐇</title>
+    
+    <style>
+        body {
+            margin: 0;
+            font-size: 17px;
+            background-color: black;
+            font-family: "Kanit", sans-serif;
+            color: #ffffff;
+        }
+
+        .profile-img {
+            width: clamp(100px, 40vw, 160px);
+            height: clamp(100px, 40vw, 160px);
+            object-fit: cover;
+            border-radius: 50%;
+            border: 3px solid rgba(255, 255, 255, 0.2);
+            box-shadow: 0 0 20px rgba(0,0,0,0.5);
+            margin-bottom: 20px;
+            animation-name: hvr-bob-float, hvr-bob;
+            animation-duration: .3s, 1.5s;
+            animation-delay: 0s, .3s;
+            animation-timing-function: ease-out, ease-in-out;
+            animation-iteration-count: 1, infinite;
+            animation-fill-mode: forwards;
+            animation-direction: normal, alternate;
+        }
+
+        #myVideo {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            -webkit-filter: blur(5px) brightness(0.7);
+            filter: blur(5px) brightness(0.7);
+        }
+        
+        .img-content {
+            position: absolute !important;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 90%;
+            max-width: 800px;
+        }
+
+        .glass-panel {
+            background: rgba(0, 0, 0, 0.55);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            padding: 40px 20px;
+            border-radius: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.5);
+            min-width: 280px; 
+        }
+
+        .divider {
+            width: 80%;
+            max-width: 400px;
+            height: 4px;
+            background: linear-gradient(90deg, blue, red);
+            margin: 25px auto;
+            border-radius: 2px;
+            border: none;
+        }
+
+        .ml13 {
+            font-size: clamp(1.8rem, 8vw, 3.5rem);
+            letter-spacing: 0.1em;
+            font-weight: 700;
+            background: linear-gradient(90deg, red, blue);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 0;
+        }
+        
+        .ml13 .letter {
+            line-height: 1.2em;
+            text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+        }
+
+        .txt-rotate-container {
+            font-size: 1.1em;
+            font-weight: 300;
+            color: #e0e0e0;
+            line-height: 1.6;
+            letter-spacing: 1px;
+        }
+        
+        .content-social {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        .btn-check:focus+.btn,
+        .btn:focus {
+            outline: 0;
+            box-shadow: none;
+        }
+
+        .txt-rotate > .wrap {
+            border-right: 0.2em solid rgb(255, 0, 0) !important;
+        }
+
+        .instagram-gradient {
+            font-size: 2rem;
+            background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            display: inline-block;
+        }
+    </style>
+</head>
+
+<body id="body" data-aos-easing="ease" data-aos-duration="400" data-aos-delay="0">
+    <div class="content">
+        <img id="myVideo" src="https://media1.tenor.com/m/ofrtZI70A44AAAAd/tokisaki-kurumi.gif">
+        
+        <div class="text-center img-content">
+            <div class="glass-panel">
+                <img class="profile-img" src="https://cdn.discordapp.com/attachments/773557134792458290/1516877843076743218/658907518_1479809753871912_1188462736293711079_n.png?ex=6a343e14&is=6a32ec94&hm=29fdb9827352e907bbd4f2047b96ddeb684a7e7edfcc87d1ec4e98b90a963460&" alt="Artist">
+                <div>
+                    <h1 class="ml13">
+                        <span class="letter">DragonZ_TH</span>
+                    </h1>
+                    <div class="divider" data-aos="fade-up" data-aos-delay="500"></div>
+                    <div data-aos="fade-up" data-aos-delay="1000" data-aos-duration="500" class="txt-rotate-container">
+                        <span class="txt-rotate" data-period="2000" data-rotate='["ไฟต์คุงมาแล้วไอน้อง","ไม่รู้จะเขียนอะไรเขียนๆไว้ก่อนเผื่อนึกออกค่อยแก้ 555+", "ชีวิตของผมคือการเล่นโปรผมเลิกไม่ได้จริงๆ😑"]'>
+                            <span class="wrap"></span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="content-social">
+        <div>
+            <a href="https://www.facebook.com/KrisnaThanikkul" target="_blank" class="btn hvr-buzz"><i class="bi bi-facebook" style="color:rgb(8, 102, 255);font-size:2rem;"></i></a>
+            <a href="https://discord.gg/5AtUmAPRNA" target="_blank" class="btn hvr-buzz"><i class="bi bi-discord" style="color:rgb(85, 97, 234);font-size:2rem;"></i></a>
+            <a href="https://www.youtube.com/@%E0%B9%84%E0%B8%9F%E0%B8%95%E0%B9%8C%E0%B8%84%E0%B8%B8%E0%B8%87" target="_blank" class="btn hvr-buzz"><i class="bi bi-youtube" style="color:rgb(255, 1, 51);font-size:2rem;"></i></a>
+            <a href="https://www.instagram.com/kt_red.22m/" target="_blank" class="btn hvr-buzz"><i class="bi bi-instagram instagram-gradient"></i></a>
+        </div>
+    </div>
+
+    <script>
+        const landscapeGifs = [
+            "https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExNXppcGl0Ynk4ZmlleGEyODZqdXdvMnNqNmxqMjdnbzI1aWo1dmIxMyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/q9EUjcUOT1aYE/giphy.gif",
+            "https://media1.tenor.com/m/ofrtZI70A44AAAAd/tokisaki-kurumi.gif",
+            "https://media1.tenor.com/m/pa_jX49vlkUAAAAd/monster-musume-anime.gif"
+        ];
+
+        const portraitGifs = [
+            "https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExeG1nc3ZqcDdjaGR3dGwzYmRxbmtod3lsbWVuejhydHY2dWFpcXVwOCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/PR3wumHIdsBhu/giphy.gif",
+            "https://media1.tenor.com/m/QZmCAiChGuwAAAAd/crimson-ragna-crimson.gif" 
+        ];
+        
+        const randomLandscapeGif = landscapeGifs[Math.floor(Math.random() * landscapeGifs.length)];
+        const randomPortraitGif = portraitGifs[Math.floor(Math.random() * portraitGifs.length)];
+
+        function updateBackground() {
+            const bgImg = document.getElementById('myVideo');
+            if (window.innerHeight > window.innerWidth) {
+                if(bgImg.src !== randomPortraitGif) bgImg.src = randomPortraitGif;
+            } else {
+                if(bgImg.src !== randomLandscapeGif) bgImg.src = randomLandscapeGif;
+            }
+        }
+
+        updateBackground();
+        window.addEventListener('resize', updateBackground);
+
+        var audio = new Audio("https://cdn.discordapp.com/attachments/773557134792458290/1516881204555546644/YTDown_YouTube_Dead-Eyes_Media_qp6Dzrm2MvU_009_128k.mp3?ex=6a344135&is=6a32efb5&hm=7f5c31a6808776931ff5f89e6ebcc8f442c38fe8cf3916c5313a52682b674fd0&");
+        
+        $("#body").click(function() {
+            audio.loop = true;
+            audio.volume = 0.4;
+            audio.play();
+        });
+        
+        AOS.init();
+        
+        var textWrapper = document.querySelector('.ml13');
+        textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+        anime.timeline({ loop: false })
+            .add({
+                targets: '.ml13 .letter',
+                translateY: [100, 0],
+                translateZ: 0,
+                opacity: [0, 1],
+                easing: "easeOutExpo",
+                duration: 1400,
+                delay: (el, i) => 300 + 30 * i
+            });
+
+        var TxtRotate = function(el, toRotate, period) {
+            this.toRotate = toRotate;
+            this.el = el;
+            this.loopNum = 0;
+            this.period = parseInt(period, 10) || 2000;
+            this.txt = '';
+            this.tick();
+            this.isDeleting = false;
+        };
+
+        TxtRotate.prototype.tick = function() {
+            var i = this.loopNum % this.toRotate.length;
+            var fullTxt = this.toRotate[i];
+
+            if (this.isDeleting) {
+                this.txt = fullTxt.substring(0, this.txt.length - 1);
+            } else {
+                this.txt = fullTxt.substring(0, this.txt.length + 1);
+            }
+
+            this.el.innerHTML = '<span class="wrap">' + this.txt + '</span>';
+            
+            var that = this;
+            var delta = 150 - Math.random() * 100;
+
+            if (this.isDeleting) {
+                delta /= 2;
+            }
+
+            if (!this.isDeleting && this.txt === fullTxt) {
+                delta = this.period;
+                this.isDeleting = true;
+            } else if (this.isDeleting && this.txt === '') {
+                this.isDeleting = false;
+                this.loopNum++;
+                delta = 500;
+            }
+            
+            setTimeout(function() {
+                that.tick();
+            }, delta);
+        };
+
+        window.onload = function() {
+            var elements = document.getElementsByClassName('txt-rotate');
+            for (var i = 0; i < elements.length; i++) {
+                var toRotate = elements[i].getAttribute('data-rotate');
+                var period = elements[i].getAttribute('data-period');
+                if (toRotate) {
+                    new TxtRotate(elements[i], JSON.parse(toRotate), period);
+                }
+            }
+        };
+    </script>
+</body>
+</html>
